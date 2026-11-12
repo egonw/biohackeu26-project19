@@ -256,17 +256,46 @@ There is a general `cites` intention, but this is already implied and should be 
 # Results
 ## Proposed Use Cases
 
-## Bashir: Use case 1: Chemical Exposure & Health Knowledge Graph
-- Use chemicals from NORMAN-SLE.
-- Connect concepts across ExpoPortal ontologies.
-- Explore exposure pathways and health relationships.
-- Visualize connections in a knowledge graph.
 
-## Bashir: Use case 2:  Knowledge Gap Explorer
-- Identify missing ontology mappings.
-- Link chemicals to scientific publications.
-- Explore limited or missing evidence.
-- Propose AI-assisted gap identification.
+## Proposed Use Cases
+
+We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientific publications, initially focusing on PFAS.
+
+### Bashir: Use case 1. Ontology Gap Detection and Improvement
+
+**Question:** Can scientific publications help identify missing concepts and relationships in exposome ontologies?
+
+**Approach:**
+- Extract chemical, exposure, and health concepts from scientific publications using AI.
+- Compare extracted information with ontologies in ExpoPortal.
+- Identify missing concepts, relationships, and cross-ontology mappings.
+
+**Expected Output:** Potential ontology gaps and evidence-based suggestions for improvement.
+
+### Bashir: Use case 2. Scientific Research Gap Explorer
+
+**Question:** Which chemicals and exposure-related health effects need further scientific research?
+
+**Approach:**
+- Explore NORMAN-SLE chemicals and related concepts using ExpoPortal ontologies.
+- Analyze scientific publications to assess available evidence.
+- Identify topics with limited, missing, or conflicting evidence.
+
+**Expected Output:** Potential research gaps and suggested research questions.
+
+### Bashir: Use case 3. Chemical Exposure & Health Knowledge Graph
+
+**Question:** How can we connect chemicals, exposure pathways, and health effects using multiple ontologies?
+
+**Approach:**
+- Link NORMAN-SLE chemicals to relevant ExpoPortal ontologies.
+- Explore environmental sources, exposure pathways, biological processes, and health outcomes.
+- Connect relationships to supporting publications.
+
+**Expected Output:** An interactive knowledge graph with traceable scientific evidence.
+
+
+
 
 # Discussion
 ## Bashir: Evaluation and Future Work
