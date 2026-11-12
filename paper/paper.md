@@ -254,10 +254,26 @@ Possible CiTO typing annotation include:
 There is a general `cites` intention, but this is already implied and should be left out.
 
 # Results
+## Proposed Use Cases
 
+## Bashir: Use case 1: Chemical Exposure & Health Knowledge Graph
+- Use chemicals from NORMAN-SLE.
+- Connect concepts across ExpoPortal ontologies.
+- Explore exposure pathways and health relationships.
+- Visualize connections in a knowledge graph.
+
+### Bashir: Use case 1:  Knowledge Gap Explorer
+- Identify missing ontology mappings.
+- Link chemicals to scientific publications.
+- Explore limited or missing evidence.
+- Propose AI-assisted gap identification.
 
 # Discussion
-
+## Bashir: Evaluation and Future Work
+- Evaluate ontology coverage and mappings.
+- Discuss limitations and missing evidence.
+- Explore dataset and publication integration.
+- Propose future ExpoPortal improvements.
 ...
 
 ## Acknowledgements
