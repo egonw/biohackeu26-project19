@@ -270,6 +270,8 @@ Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and s
 - Extract chemical, exposure, and health concepts from scientific publications using AI.
 - Compare extracted information with ontologies in ExpoPortal.
 - Identify missing concepts, relationships, and cross-ontology mappings.
+the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_1.md
+
 
 **Expected Output:** Potential ontology gaps and evidence-based suggestions for improvement.
 <img width="772" height="434" alt="image" src="https://github.com/user-attachments/assets/7f75aa29-3185-4ef6-abe6-7a5b0f5af6a3" />
