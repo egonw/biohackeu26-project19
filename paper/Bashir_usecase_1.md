@@ -5,8 +5,16 @@
 We tested whether chemical data, scientific papers and ontology queries can help us find missing concepts or relationships in **ExpoPortal**.
 
 - **[NORMAN-SLE](https://normansle.lcsb.uni.lu/):** We used the [S90 – ZeroPM Box 1 list](https://doi.org/10.5281/zenodo.5854251), containing 38 chemical structures.
-- **[ChEBI](https://www.ebi.ac.uk/chebi/) and [ECTO](https://obofoundry.org/ontology/ecto.html):** Ontologies describing chemicals and environmental exposures.
 - **[PubMed](https://pubmed.ncbi.nlm.nih.gov/):** Scientific papers supporting our review.
+- **[NORMAN-SLE](https://normansle.lcsb.uni.lu/):** We used the [S90 – ZeroPM Box 1 list](https://doi.org/10.5281/zenodo.5854251), containing 38 chemical structures.
+- **[ChEBI](https://www.ebi.ac.uk/chebi/) and [ECTO](https://obofoundry.org/ontology/ecto.html):** Ontologies describing chemicals and environmental exposures.
+- - **[ChEBI](https://www.ebi.ac.uk/chebi/):** Chemical compounds and their classification.
+- **[ECTO](https://obofoundry.org/ontology/ecto.html):** Environmental exposures.
+- **[ENVO](https://obofoundry.org/ontology/envo.html):** Environmental conditions and habitats.
+- **[GO](https://geneontology.org/):** Biological processes and molecular functions.
+- **[MONDO](https://mondo.monarchinitiative.org/):** Diseases and their classification.
+- **[HPO](https://hpo.jax.org/):** Human phenotypes and abnormalities.
+
 
 In the pilot, we checked **38 structures, 8 ontologies and 8 PubMed papers**. We matched 22 structures to ChEBI using exact InChIKeys.
 
