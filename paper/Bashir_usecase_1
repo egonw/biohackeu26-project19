@@ -1,0 +1,130 @@
+# Case Study: Detecting Ontology Gaps Using NORMAN-SLE, ChEBI and ECTO
+
+## 1. Objective and Data Sources
+
+We tested a simple approach to find missing concepts and relationships in scientific ontologies.
+
+The idea was to combine **chemical data, scientific publications, and ontology relationships** to identify possible gaps.
+
+We used three main sources:
+
+- **[NORMAN-SLE](https://normansle.lcsb.uni.lu/):** A chemical database. We selected the [S90 – ZeroPM Box 1 list](https://doi.org/10.5281/zenodo.5854251), containing 38 chemical structures.
+- **[ChEBI](https://www.ebi.ac.uk/chebi/) and [ECTO](https://obofoundry.org/ontology/ecto.html):** Ontologies describing chemicals and environmental exposures.
+- **[PubMed](https://pubmed.ncbi.nlm.nih.gov/):** Scientific papers providing evidence about chemicals and their effects.
+
+We checked 38 chemical structures, explored 8 ontologies, and reviewed 8 PubMed articles.
+
+## 2. Example 1: A Missing Relationship in ChEBI
+
+### Step 1: Identify a chemical
+
+We selected **PFOA (Perfluorooctanoic Acid)** from the NORMAN-SLE list.
+
+Its ChEBI identifier is [CHEBI:35549](https://www.ebi.ac.uk/chebi/CHEBI:35549).
+
+We matched the chemical using its InChIKey to avoid confusion between similar names.
+
+### Step 2: Find scientific evidence
+
+We found the following paper:
+
+**Barry et al. (2013)** – *Perfluorooctanoic Acid (PFOA) Exposures and Incident Cancers among Adults Living Near a Chemical Plant.*
+
+[PubMed: 24007715](https://pubmed.ncbi.nlm.nih.gov/24007715/) | [DOI](https://doi.org/10.1289/ehp.1306615)
+
+The study examined PFOA exposure through drinking water and reported associations with kidney and testicular cancer.
+
+This confirmed the importance of PFOA for exposure research. However, the paper alone does not prove an ontology gap.
+
+### Step 3: Search ChEBI
+
+We used SPARQL to explore the chemical classification in ChEBI.
+
+We found that:
+
+- PFOA belongs to **fluoroalkanoic acid (CHEBI:35551)**.
+- PFOS belongs to **perfluoroalkanesulfonic acid (CHEBI:132447)**.
+- Both chemical groups are directly under *perfluorinated compound (CHEBI:134091)*.
+- The class **perfluoroalkyl substance (CHEBI:172397)** exists but has no direct subclasses.
+
+The current structure looks like this:
+
+```text
+Perfluorinated compound
+│
+├── Fluoroalkanoic acid
+│   └── PFOA
+│
+├── Perfluoroalkanesulfonic acid
+│   └── PFOS
+│
+└── Perfluoroalkyl substance
+    └── No subclasses
+```
+
+### Step 4: Confirm the gap
+
+We checked the relationships using SPARQL and compared the results with the official ChEBI database.
+
+The results showed:
+
+| Question | Result |
+|---|---|
+| Does PFOA exist in ChEBI? | Yes |
+| Is PFOA classified under fluoroalkanoic acid? | Yes |
+| Does CHEBI:172397 have direct subclasses? | No |
+| Can PFOA be reached through this class hierarchy? | No |
+
+We also found an existing [ChEBI GitHub issue #4084](https://github.com/ebi-chebi/ChEBI/issues/4084) discussing the need to add child classes. This issue dates back to 2021.
+
+**Finding:** We identified a confirmed gap in the explicitly recorded ChEBI hierarchy. Common PFAS chemicals cannot be retrieved through the expected general class.
+
+A similar issue appears in ECTO, where *exposure to perfluoroalkyl substance (ECTO:9002160)* also has no direct subclasses.
+
+The [OECD 2021 PFAS report](https://doi.org/10.1787/e458e796-en) provides additional scientific context, although the exact classification changes need expert review.
+
+## 3. Example 2: A Potential Missing Exposure Concept
+
+We also investigated **Trifluoroacetic Acid (TFA)**.
+
+- ChEBI identifier: [CHEBI:45892](https://www.ebi.ac.uk/chebi/CHEBI:45892)
+- Paper: *The Global Threat from the Irreversible Accumulation of Trifluoroacetic Acid (TFA)* – Arp et al. (2024)
+- [PubMed: 39475534](https://pubmed.ncbi.nlm.nih.gov/39475534/)
+
+The paper discusses the growing presence of TFA in rainwater, drinking water, soil, and biological samples.
+
+We searched the ontologies and found:
+
+- TFA exists in ChEBI.
+- TFA also has a corresponding concept in NCIT.
+- A cross-reference between ChEBI and NCIT already exists.
+- However, we could not find a specific *exposure to trifluoroacetic acid* class in ECTO.
+
+**Finding:** This is a possible missing exposure concept, but not a confirmed error. ECTO may represent this exposure using existing concepts without creating a separate class.
+
+## 4. How We Detected the Gaps
+
+Our workflow followed five steps:
+
+1. **Chemical matching:** Match NORMAN-SLE chemicals with ChEBI using InChIKeys and chemical identifiers.
+2. **Literature search:** Find relevant PubMed articles and collect scientific evidence.
+3. **Ontology exploration:** Use SPARQL to examine classes, properties, and relationships.
+4. **Gap detection:** Identify missing concepts or relationships.
+5. **Validation:** Compare findings with the official ontologies and separate confirmed gaps from suggestions.
+
+Validation was important. For example, we initially thought the connection between TFA in NCIT and ChEBI was missing. A second check showed that the cross-reference already existed, so we removed that claim.
+
+## 5. Conclusion and Next Steps
+
+The pilot showed that combining chemical datasets, scientific publications, and ontology queries can help identify possible gaps.
+
+We found two useful examples:
+
+- **Confirmed structural gap:** Missing subclasses under CHEBI:172397 in the recorded PFAS hierarchy.
+- **Potential concept gap:** No dedicated TFA exposure class found in ECTO.
+
+The next step is to turn this workflow into a small feature in **ExpoPortal**.
+
+Users could select a chemical list, match chemicals with ontologies, explore related literature, and receive possible gap suggestions with supporting evidence.
+
+The goal is to build an **evidence-based ontology gap detection tool**, where experts review suggestions before any ontology changes are made.
