@@ -262,7 +262,7 @@ There is a general `cites` intention, but this is already implied and should be 
 - Explore exposure pathways and health relationships.
 - Visualize connections in a knowledge graph.
 
-### Bashir: Use case 1:  Knowledge Gap Explorer
+## Bashir: Use case 2:  Knowledge Gap Explorer
 - Identify missing ontology mappings.
 - Link chemicals to scientific publications.
 - Explore limited or missing evidence.
