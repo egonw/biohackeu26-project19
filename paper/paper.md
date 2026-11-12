@@ -268,6 +268,12 @@ There is a general `cites` intention, but this is already implied and should be 
 - Explore limited or missing evidence.
 - Propose AI-assisted gap identification.
 
+## Fernando: Use case 3: Impact of Air Pollution on Health Outcomes and Transcriptomic/Proteomic Profiles
+- Integrate phenotypic, exposure, demographic, transcriptomic, and proteomic data.
+- Map concepts/entities to ExpoPortal ontologies.
+- Identify ontology gaps after mapping.
+- Apply neuro-symbolic AI to identify associations between the expomosome and BMI/asthma or omic expression levels.
+
 # Discussion
 ## Bashir: Evaluation and Future Work
 - Evaluate ontology coverage and mappings.
