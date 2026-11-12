@@ -259,7 +259,8 @@ There is a general `cites` intention, but this is already implied and should be 
 
 ## Proposed Use Cases
 
-We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientific publications, initially focusing on PFAS.
+Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientific publications, initially focusing on PFAS.
+<img width="886" height="204" alt="image" src="https://github.com/user-attachments/assets/f47816ae-0693-4b70-8c57-e8493197eca5" />
 
 ### Bashir: Use case 1. Ontology Gap Detection and Improvement
 
@@ -271,6 +272,7 @@ We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientif
 - Identify missing concepts, relationships, and cross-ontology mappings.
 
 **Expected Output:** Potential ontology gaps and evidence-based suggestions for improvement.
+<img width="772" height="434" alt="image" src="https://github.com/user-attachments/assets/7f75aa29-3185-4ef6-abe6-7a5b0f5af6a3" />
 
 ### Bashir: Use case 2. Scientific Research Gap Explorer
 
@@ -282,6 +284,7 @@ We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientif
 - Identify topics with limited, missing, or conflicting evidence.
 
 **Expected Output:** Potential research gaps and suggested research questions.
+<img width="758" height="426" alt="image" src="https://github.com/user-attachments/assets/18ad1751-2547-45ef-a874-dbbd27b4fc93" />
 
 ### Bashir: Use case 3. Chemical Exposure & Health Knowledge Graph
 
@@ -293,6 +296,7 @@ We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientif
 - Connect relationships to supporting publications.
 
 **Expected Output:** An interactive knowledge graph with traceable scientific evidence.
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/8daaee07-de04-45f6-9f9f-c43afa2c6b98" />
 
 ## Fernando: Use case 4: Impact of Air Pollution on Health Outcomes and Transcriptomic/Proteomic Profiles
 - Integrate phenotypic, exposure, demographic, transcriptomic, and proteomic data.
