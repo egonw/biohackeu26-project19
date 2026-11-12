@@ -7,14 +7,14 @@ We tested whether chemical data, scientific papers and ontology queries can help
 - **[NORMAN-SLE](https://normansle.lcsb.uni.lu/):** We used the [S90 – ZeroPM Box 1 list](https://doi.org/10.5281/zenodo.5854251), containing 38 chemical structures.
 - **[PubMed](https://pubmed.ncbi.nlm.nih.gov/):** Scientific papers supporting our review.
 - **Ontologies I used for this usecase:**
-- *** ChEBI: Chemical compounds and their classification.***
-- *** ECTO: Environmental exposures.
-- *** ENVO: Environmental conditions and habitats.
-- *** GO: Biological processes and molecular functions.
-- *** MONDO: Diseases and their classification.
-- *** HPO: Human phenotypes and abnormalities.
-- *** NCIT: Biomedical and cancer-related terminology.
-- *** EFO: Experimental factors, diseases, and biological concepts.
+- ChEBI: Chemical compounds and their classification
+- ECTO: Environmental exposures.
+- ENVO: Environmental conditions and habitats.
+- GO: Biological processes and molecular functions.
+- MONDO: Diseases and their classification.
+- HPO: Human phenotypes and abnormalities.
+- NCIT: Biomedical and cancer-related terminology.
+- EFO: Experimental factors, diseases, and biological concepts.
 
 In the pilot, we checked **38 structures, 8 ontologies and 8 PubMed papers**. We matched 22 structures to ChEBI using exact InChIKeys.
 
