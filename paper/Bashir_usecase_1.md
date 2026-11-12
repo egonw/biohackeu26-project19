@@ -6,8 +6,8 @@ We tested whether chemical data, scientific papers and ontology queries can help
 
 - **[NORMAN-SLE](https://normansle.lcsb.uni.lu/):** We used the [S90 – ZeroPM Box 1 list](https://doi.org/10.5281/zenodo.5854251), containing 38 chemical structures.
 - **[PubMed](https://pubmed.ncbi.nlm.nih.gov/):** Scientific papers supporting our review.
-- **Ontologies I used for this usecase:
-- *** ChEBI: Chemical compounds and their classification.
+- **Ontologies I used for this usecase:**
+- *** ChEBI: Chemical compounds and their classification.***
 - *** ECTO: Environmental exposures.
 - *** ENVO: Environmental conditions and habitats.
 - *** GO: Biological processes and molecular functions.
