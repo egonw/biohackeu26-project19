@@ -297,6 +297,12 @@ We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientif
 
 
 
+## Fernando: Use case 3: Impact of Air Pollution on Health Outcomes and Transcriptomic/Proteomic Profiles
+- Integrate phenotypic, exposure, demographic, transcriptomic, and proteomic data.
+- Map concepts/entities to ExpoPortal ontologies.
+- Identify ontology gaps after mapping.
+- Apply neuro-symbolic AI to identify associations between the expomosome and BMI/asthma or omic expression levels.
+
 # Discussion
 ## Bashir: Evaluation and Future Work
 - Evaluate ontology coverage and mappings.
