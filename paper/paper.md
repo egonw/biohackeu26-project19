@@ -294,10 +294,7 @@ We propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and scientif
 
 **Expected Output:** An interactive knowledge graph with traceable scientific evidence.
 
-
-
-
-## Fernando: Use case 3: Impact of Air Pollution on Health Outcomes and Transcriptomic/Proteomic Profiles
+## Fernando: Use case 4: Impact of Air Pollution on Health Outcomes and Transcriptomic/Proteomic Profiles
 - Integrate phenotypic, exposure, demographic, transcriptomic, and proteomic data.
 - Map concepts/entities to ExpoPortal ontologies.
 - Identify ontology gaps after mapping.
