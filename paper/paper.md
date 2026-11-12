@@ -270,7 +270,7 @@ Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and s
 - Extract chemical, exposure, and health concepts from scientific publications using AI.
 - Compare extracted information with ontologies in ExpoPortal.
 - Identify missing concepts, relationships, and cross-ontology mappings.
-the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_1.md
+###the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_1.md
 
 
 **Expected Output:** Potential ontology gaps and evidence-based suggestions for improvement.
@@ -287,7 +287,7 @@ the first draft of the result is available on the : https://github.com/egonw/bio
 
 **Expected Output:** Potential research gaps and suggested research questions.
 <img width="758" height="426" alt="image" src="https://github.com/user-attachments/assets/18ad1751-2547-45ef-a874-dbbd27b4fc93" />
-the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_2.md
+### the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_2.md
 ### Bashir: Use case 3. Chemical Exposure & Health Knowledge Graph
 
 **Question:** How can we connect chemicals, exposure pathways, and health effects using multiple ontologies?
