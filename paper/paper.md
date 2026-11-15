@@ -71,7 +71,9 @@ Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and s
 
 **Expected Output:** Potential research gaps and suggested research questions.
 <img width="758" height="426" alt="image" src="https://github.com/user-attachments/assets/18ad1751-2547-45ef-a874-dbbd27b4fc93" />
-### the first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_2.md
+
+The first draft of the result is available on the : https://github.com/egonw/biohackeu26-project19/blob/main/paper/Bashir_usecase_2.md
+
 ### Bashir: Use case 3. Chemical Exposure & Health Knowledge Graph
 
 **Question:** How can we connect chemicals, exposure pathways, and health effects using multiple ontologies?
@@ -88,7 +90,23 @@ Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and s
 - Integrate phenotypic, exposure, demographic, transcriptomic, and proteomic data.
 - Map concepts/entities to ExpoPortal ontologies.
 - Identify ontology gaps after mapping.
-- Apply neuro-symbolic AI to identify associations between the expomosome and BMI/asthma or omic expression levels.
+- Apply neuro-symbolic AI to identify associations between the exposome and BMI/asthma or omic expression levels.
+
+## Faria, Egon: Use case 5: Impact of 6PPD on the environment and human heath
+
+6PPD (inchikey:xxx) is a chemical original from tires, and the 6PPD-Q compound turns out to be toxic.
+
+### Omics data analysis
+
+### Transformation products and metabolites
+
+While 6PPD is the compound that is leaked into the environment, there may be other chemical compounds
+that are easier to detect. But the plausibility of those to be biomarkers needs to be established,
+often from literature [@cito:citesAsRecommendedReading:10.1021/acs.estlett.3c00537].
+Sharing via FAIR databases is needed, e.g. FAIR-TPs for transformation products [@cito:citesAsAuthority:10.1021/acsenvironau.5c00314]
+or XMetDb for metabolite [cito:citesAsAuthority:10.1186/S13321-016-0161-3].
+
+![](6ppd_TPsMetabolites.png)
 
 # Discussion
 ## Bashir: Evaluation and Future Work
@@ -103,17 +121,3 @@ Bashir: I propose three use cases using NORMAN-SLE, ExpoPortal ontologies, and s
 ...
 
 # References
-
-```{=latex}
-\AtEndDocument{%
-```
-
-# Appendices
-
-If you want the Appendix (-ces) to show up after the references, wrap them in 
-after the header, like done in this Markdown file. Look at the [source](paper.md)
-to see the exact structure.
-
-```{=latex}
-}
-```
