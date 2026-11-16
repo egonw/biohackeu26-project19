@@ -9,6 +9,10 @@ authors:
   - name: First Author
     affiliation: 1
     role: Writing – original draft
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+    affiliation: 3
+    role: Conceptualization, Writing – review & editing
   - name: Last Author
     orcid: 0000-0000-0000-0000
     affiliation: 2
@@ -19,7 +23,10 @@ affiliations:
   - name: ELIXIR Europe
     ror: 044rwnt51
     index: 2
-date: 13 November 2026
+  - name: Dept of Translational Genomics, NUTRIM, Maastricht University
+    ror: 02jz4aj89
+    index: 3
+date: 16 November 2026
 cito-bibliography: paper.bib
 event: BioHackEU26
 biohackathon_name: "BioHackathon Europe 2026"
@@ -102,9 +109,9 @@ The first draft of the result is available on the : https://github.com/egonw/bio
 
 While 6PPD is the compound that is leaked into the environment, there may be other chemical compounds
 that are easier to detect. But the plausibility of those to be biomarkers needs to be established,
-often from literature [@cito:citesAsRecommendedReading:10.1021/acs.estlett.3c00537].
-Sharing via FAIR databases is needed, e.g. FAIR-TPs for transformation products [@cito:citesAsAuthority:10.1021/acsenvironau.5c00314]
-or XMetDb for metabolite [cito:citesAsAuthority:10.1186/S13321-016-0161-3].
+often from literature [@citesAsRecommendedReading:Palm2023].
+Sharing via FAIR databases is needed, e.g. FAIR-TPs for transformation products [@citesAsAuthority:Mayahi2026]
+or XMetDb for metabolite [@citesAsAuthority:Spjuth2016].
 
 ![](6ppd_TPsMetabolites.png)
 
